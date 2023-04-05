@@ -1,0 +1,12 @@
+{
+  "itemGroup.dsorcery.materials": "Arcane Materials",
+  "itemGroup.dsorcery.wands": "Arcane Equipment",
+  "itemGroup.dsorcery.spells": "Spells",
+
+  "item.dsorcery.arcanite": "Arcanite",
+  "block.dsorcery.arcanite_ore": "Arcanite Ore",
+  "item.dsorcery.spellbook": "Arcane Tome",
+  "item.dsorcery.scroll": "Arcane Scroll",
+
+  "spell.dsorcery.magic_missile": "Magic Missile"
+}

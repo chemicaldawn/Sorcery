@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "dsorcery",
+  "version": "${version}",
+  "name": "Dawn's Sorcery",
+  "description": "A Minecrafty-feeling magic system without the hassle of traditional magic mods! A spiritual successor to Electroblob's Wizardry.",
+  "authors": [
+    "chemicaldawn"
+  ],
+  "contact": {
+    "homepage": "http://dawn.chemicalsunrise.com/",
+    "sources": "https://github.com/chemicaldawn/Sorcery"
+  },
+  "license": "MIT",
+  "icon": "assets/dsorcery/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.chemicalsunrise.dawn.dsorcery.fabric.DawnSorceryFabric"
+    ]
+  },
+  "mixins": [
+    "dsorcery.mixins.json",
+    "dsorcery-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.4",
+    "architectury": ">=6.2.43"
+  }
+}

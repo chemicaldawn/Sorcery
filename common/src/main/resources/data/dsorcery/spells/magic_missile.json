@@ -1,0 +1,12 @@
+{
+  "name" : "Magic Missile",
+  "type" : "single_cast",
+  "element" : "dsorcery:none",
+  "tier" : 1,
+  "events" : [
+    {
+      "type" : "event",
+      "target" : "dsorcery:magic_missile_event"
+    }
+  ]
+}

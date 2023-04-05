@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "dsorcery"
+version = "${version}"
+displayName = "Dawn's Sorcery"
+authors = "chemicaldawn"
+description = '''
+A Minecrafty-feeling magic system without the hassle of traditional magic mods! A spiritual successor to Electroblob's Wizardry.
+'''
+logoFile = "assets/dsorcery/icon.png"
+
+[[dependencies.dsorcery]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dsorcery]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dsorcery]]
+modId = "architectury"
+mandatory = true
+versionRange = "[6.2.43,)"
+ordering = "AFTER"
+side = "BOTH"

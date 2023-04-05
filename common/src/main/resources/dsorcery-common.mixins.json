@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.chemicalsunrise.dawn.dsorcery.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MixinLocalPlayer"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
