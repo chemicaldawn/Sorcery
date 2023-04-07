@@ -1,1 +1,2 @@
 # Sorcery
+$${\color{red}Red}$$
