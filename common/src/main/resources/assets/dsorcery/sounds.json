@@ -1,0 +1,12 @@
+{
+  "spells.shadow_wizard_money_gang": {
+    "category": "players",
+    "subtitle": "dsorcery.subtitle.shadow_wizard_money_gang",
+    "sounds": [
+      {
+        "name": "dsorcery:spells/shadow_wizard_money_gang",
+        "stream": true
+      }
+    ]
+  }
+}

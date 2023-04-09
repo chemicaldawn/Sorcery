@@ -19,7 +19,9 @@ public abstract class Spell {
         this.element = element;
     }
 
-    public abstract void cast(Level level, Player player, InteractionHand interactionHand);
+    public abstract boolean isGlobalSpell();
+
+    public abstract boolean isJokeSpell();
 
     public void consumeMana(Player player, InteractionHand interactionHand) {
         // decrease mana value in wand

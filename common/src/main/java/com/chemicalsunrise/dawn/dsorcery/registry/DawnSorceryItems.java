@@ -1,8 +1,11 @@
 package com.chemicalsunrise.dawn.dsorcery.registry;
 
 import com.chemicalsunrise.dawn.dsorcery.DawnSorcery;
+import com.chemicalsunrise.dawn.dsorcery.api.SpellTier;
 import com.chemicalsunrise.dawn.dsorcery.item.ScrollItem;
 import com.chemicalsunrise.dawn.dsorcery.item.SpellBookItem;
+import com.chemicalsunrise.dawn.dsorcery.item.WandItem;
+import com.chemicalsunrise.dawn.dsorcery.magic.elements.Element;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
@@ -17,6 +20,9 @@ public class DawnSorceryItems {
 
     public static final RegistrySupplier<Item> ARCANITE = ITEMS.register("arcanite", () ->
             new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS)));
+
+    public static final RegistrySupplier<Item> DEVELOPER_WAND = ITEMS.register("developer_wand", () ->
+            new WandItem(new Item.Properties(), SpellTier.MASTER, DawnSorceryElements.SORCERY,5));
 
     public static final RegistrySupplier<Item> SPELLBOOK = ITEMS.register("spellbook", () ->
             new SpellBookItem(new Item.Properties()));

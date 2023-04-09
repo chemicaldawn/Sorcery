@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "com.chemicalsunrise.dawn.dsorcery.fabric.DawnSorceryFabric"
+    ],
+    "client": [
+      "com.chemicalsunrise.dawn.dsorcery.fabric.DawnSorceryFabricClient"
     ]
   },
   "mixins": [

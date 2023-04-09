@@ -1,7 +1,7 @@
 package com.chemicalsunrise.dawn.dsorcery.api;
 
 public enum SpellTier {
-    BASIC,
+    NOVICE,
     APPRENTICE,
     ADEPT,
     MASTER

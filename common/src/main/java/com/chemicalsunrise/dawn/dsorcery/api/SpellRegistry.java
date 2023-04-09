@@ -41,7 +41,7 @@ public class SpellRegistry {
         for(Map.Entry<ResourceLocation,Spell> entry : REGISTRY.entrySet()) {
             Supplier<ItemStack> addition = () -> {
                 ItemStack stack = DawnSorceryItems.SCROLL.get().getDefaultInstance();
-                stack.addTagElement("spell", StringTag.valueOf(entry.getKey().toString()));
+                stack.addTagElement("Spell", StringTag.valueOf(entry.getKey().toString()));
                 return stack;
             };
 

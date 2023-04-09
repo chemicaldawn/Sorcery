@@ -3,7 +3,8 @@
   "package": "com.chemicalsunrise.dawn.dsorcery.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "MixinLocalPlayer"
+    "MixinLocalPlayer",
+    "MixinGui"
   ],
   "mixins": [
   ],

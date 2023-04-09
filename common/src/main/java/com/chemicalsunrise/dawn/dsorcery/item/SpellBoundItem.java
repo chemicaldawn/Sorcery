@@ -5,6 +5,7 @@ import com.chemicalsunrise.dawn.dsorcery.api.SpellRegistry;
 import com.chemicalsunrise.dawn.dsorcery.magic.spells.Spell;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.StringTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
@@ -20,6 +21,13 @@ import java.util.List;
 public class SpellBoundItem extends Item {
     public SpellBoundItem(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public ItemStack getDefaultInstance() {
+        ItemStack base = new ItemStack(this);
+        base.addTagElement("Spell", StringTag.valueOf(""));
+        return base;
     }
 
     @Override
@@ -47,7 +55,7 @@ public class SpellBoundItem extends Item {
     public Spell getSpell(ItemStack itemStack) {
         CompoundTag tag = itemStack.getTag();
         if(tag != null) {
-            Tag id = tag.get("spell");
+            Tag id = tag.get("Spell");
             if(id != null) {
                 String spell_id = id.getAsString();
                 return SpellRegistry.getByString(spell_id);
