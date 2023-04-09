@@ -11,8 +11,8 @@ import net.minecraft.world.level.Level;
 public abstract class Spell {
 
     private ResourceLocation id;
-    private SpellTier tier;
-    private Element element;
+    private final SpellTier tier;
+    private final Element element;
 
     public Spell(SpellTier tier, Element element) {
         this.tier = tier;
